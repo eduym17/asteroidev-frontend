@@ -1,4 +1,5 @@
 import './App.css'
+import {asteroidevLogo} from './utils/images.ts';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
             <p className='text-asdev-white font-lato font-light text-center'>Lato: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className='flex flex-grow flex-col items-center justify-center'>
-            <img src='./src/assets/asteroidev.svg' alt="Asteroidev Logo" className='w-20 h-20'/>
+            <img src={asteroidevLogo} alt="Asteroidev Logo" className='w-20 h-20'/>
             <p className='text-3xl text-asdev-white font-poppins'>
               <b className='text-asdev-violet'>Asteroidev</b> Landing Page.
             </p>
