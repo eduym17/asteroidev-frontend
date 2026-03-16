@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { CircleChevronDown, CircleX } from "lucide-react";
 import Container from "../ui/Container";
-import { asteroidevIsotype } from '../../utils/images';
+import { asteroiDevIsotype } from '../../utils/images';
 import { useRef, useState } from "react";
 import useClickOutside from "../../hooks/useClickOutside";
 
@@ -19,7 +19,7 @@ export default function Header() {
 
           <div className="font-bold text-lg">
             <Link to="/">
-              <img src={asteroidevIsotype} alt="Asteroidev Logo" className='w-16 h-16' />
+              <img src={asteroiDevIsotype} alt="Asteroidev Logo" className='w-16 h-16' />
             </Link>
           </div>
 

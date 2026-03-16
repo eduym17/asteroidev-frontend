@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import Container from "../ui/Container";
-import { asteroidevImagotype } from '../../utils/images';
+import { asteroiDevImagotype } from '../../utils/images';
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
       <Container>
         <div className="font-bold text-lg py-3">
           <Link to="/">
-            <img src={asteroidevImagotype} alt="Asteroidev Logo" className='h-8' />
+            <img src={asteroiDevImagotype} alt="Asteroidev Logo" className='h-8' />
           </Link>
         </div>
 
