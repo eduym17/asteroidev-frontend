@@ -1,26 +1,33 @@
-import { Link } from "react-router-dom"
-import { CircleChevronDown, CircleX } from "lucide-react"
-import Container from "../../components/ui/Container"
-import { asteroidevLogo } from '../../utils/images';
-import { useState } from "react";
+import { Link } from "react-router-dom";
+import { CircleChevronDown, CircleX } from "lucide-react";
+import Container from "../ui/Container";
+import { asteroidevIsotype } from '../../utils/images';
+import { useRef, useState } from "react";
+import useClickOutside from "../../hooks/useClickOutside";
 
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement | null>(null)
+
+  useClickOutside(menuRef, () => setMenuOpen(false))
+
   return (
-    <header className="border-b bg-asdev-night">
+    <header className="border-b bg-asdev-night z-50">
       <Container>
         <div className="flex items-center justify-between py-3 relative">
 
           <div className="font-bold text-lg">
-            <img src={asteroidevLogo} alt="Asteroidev Logo" className='w-16 h-16' />
+            <Link to="/">
+              <img src={asteroidevIsotype} alt="Asteroidev Logo" className='w-16 h-16' />
+            </Link>
           </div>
 
           <nav className="hidden md:flex gap-8 text-asdev-white">
             <Link to="/">Home</Link>
-            <Link to="/services">Services</Link>
+            {/* <Link to="/services">Services</Link>
             <Link to="/members">Members</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Contact</Link> */}
           </nav>
 
           <button
@@ -31,6 +38,7 @@ export default function Header() {
           </button>
 
           <div
+            ref={menuRef}
             className={`
               md:hidden absolute -right-1.5 top-5.5
               bg-asdev-violet py-3 pr-16 pl-4
@@ -43,9 +51,9 @@ export default function Header() {
           >
             <nav className="flex flex-col gap-2 text-asdev-white">
               <Link to="/">Home</Link>
-              <Link to="/services">Services</Link>
+              {/* <Link to="/services">Services</Link>
               <Link to="/members">Members</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">Contact</Link> */}
             </nav>
           </div>
 

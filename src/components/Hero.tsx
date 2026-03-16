@@ -1,17 +1,29 @@
+import { heroBgMobile } from '../utils/images';
+
 export default function Hero() {
-return (
-<div className="flex flex-col items-center text-center md:text-left md:items-start gap-6 bg-amber-300">
-    <h1 className="text-4xl md:text-5xl font-bold">
-    Build faster products
-    </h1>
+  return (
+    <section className="relative h-64 w-full">
 
-    <p className="text-gray-600 max-w-xl">
-    Launch your ideas quickly using modern web technologies.
-    </p>
+      <div className="absolute inset-0 bg-asdev-night rounded-b-2xl z-0"></div>
 
-    <button className="px-6 py-3 bg-blue-600 text-white rounded-lg">
-    Get Started
-    </button>
-</div>
-)
+      <img
+        src={heroBgMobile}
+        alt="Hero"
+        className="absolute w-full h-64 object-cover rounded-b-2xl z-10"
+      />
+
+      <div className="relative z-10 h-full flex items-center">
+        <div className="max-w-6xl mx-auto px-6 text-white flex flex-col items-center">
+          <p className="text-lg md:text-xl max-w-xl">
+            Hello, welcome to
+          </p>
+
+          <h1 className="text-3xl md:text-6xl font-semibold text-center">
+            The smarter way to <p className='font-bold'>level up</p>
+          </h1>
+        </div>
+      </div>
+
+    </section>
+  )
 }
