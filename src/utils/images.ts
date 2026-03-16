@@ -1,7 +1,7 @@
 import asteroiDevIsotype from '../assets/asteroiDevIsotype.svg';
 import asteroiDevImagotype from '../assets/asteroiDevImagotype.svg';
-import heroBgMobile from '../assets/heroBgMobile.svg';
+import heroBg from '../assets/heroBg.svg';
 
 export {
-  asteroiDevImagotype, asteroiDevIsotype, heroBgMobile
+  asteroiDevImagotype, asteroiDevIsotype, heroBg
 }

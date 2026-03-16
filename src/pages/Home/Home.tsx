@@ -9,10 +9,10 @@ export default function Home() {
     <section className="">
       <Hero />
       <Container className="flex flex-col items-center">
-        <SectionHeader className="text-asdev-night text-center" highlight="Unlock" ringPosition="left-2">
+        <SectionHeader className="text-asdev-night" highlight="Unlock" ringPosition="-left-4">
           Unlock new opportunities
         </SectionHeader>
-        <div className="flex flex-col gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
           <SkillUpCard header="Tailored Learning" cardIcon={Settings2} hoverIcon={GraduationCap}>
             Tailored learning paths based on your ambitions.
           </SkillUpCard>

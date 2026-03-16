@@ -27,14 +27,20 @@ export default function SectionHeader({
   }
 
   return (
-    <div className={`relative inline-flex items-center w-full py-8 ${className}`}>
-      
-      <div className={`absolute ${ringPosition} w-12 h-12 border-[5px] border-asdev-violet rounded-full opacity-30`}></div>
+<div className={`w-full py-8 md:py-14 ${className}`}>
+  <div className="flex justify-center w-full">
 
-      <h2 className={`relative text-2xl font-medium tracking-tight w-full`}>
+    <div className="relative inline-flex items-center">
+      <div
+        className={`absolute -left-4 w-12 h-12 border-[7px] border-asdev-violet rounded-full opacity-30 ${ringPosition}`}
+      />
+      <h2 className="relative text-2xl font-medium tracking-tight">
         {renderText()}
       </h2>
 
     </div>
+
+  </div>
+</div>
   )
 }

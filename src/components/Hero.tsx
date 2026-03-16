@@ -1,15 +1,15 @@
-import { heroBgMobile } from '../utils/images';
+import { heroBg } from '../utils/images';
 
 export default function Hero() {
   return (
-    <section className="relative h-64 w-full">
+    <section className="relative h-60 md:h-96 w-full">
 
       <div className="absolute inset-0 bg-asdev-night rounded-b-2xl z-0"></div>
 
       <img
-        src={heroBgMobile}
+        src={heroBg}
         alt="Hero"
-        className="absolute w-full h-64 object-cover rounded-b-2xl z-10"
+        className="absolute w-full h-60 md:h-96 object-cover rounded-b-2xl z-10"
       />
 
       <div className="relative z-10 h-full flex items-center">
