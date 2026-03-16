@@ -1,6 +1,6 @@
 import Container from "../../components/ui/Container";
 import SectionHeader from "../../components/ui/SectionHeader";
-import SkillUpCard from "../../components/ui/skillUpCard";
+import SkillUpCard from "../../components/ui/SkillUpCard";
 import Hero from "../../components/Hero";
 import { Settings2, GraduationCap, Goal, FastForward, Rocket, Crown, Brain, BookOpenCheck } from "lucide-react";
 
