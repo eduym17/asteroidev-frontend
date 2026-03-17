@@ -77,6 +77,7 @@ export default function SkillUpCard({
       <p
         className="
           text-sm
+          md:text-[16px]
           transition-colors duration-500
           group-hover:text-asdev-white
         "

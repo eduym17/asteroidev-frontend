@@ -26,7 +26,7 @@ export default function Home() {
             Practical, guided and results-focused growth.
           </SkillUpCard>
         </div>
-        <div className="py-14 text-center text-[15px]">
+        <div className="py-14 text-center text-[15px] md:text-lg">
           <p>Start today and <span className="font-semibold">take control</span> of your future!</p>
           <p>Your next level is just <span className="font-semibold">one step</span> away.</p>
         </div>

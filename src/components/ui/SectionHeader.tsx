@@ -32,9 +32,9 @@ export default function SectionHeader({
 
     <div className="relative inline-flex items-center">
       <div
-        className={`absolute -left-4 w-12 h-12 border-[7px] border-asdev-violet rounded-full opacity-30 ${ringPosition}`}
+        className={`absolute -left-6 w-22 h-12 md:w-24 md:h-14 border-[7px] border-asdev-violet rounded-full opacity-30 ${ringPosition}`}
       />
-      <h2 className="relative text-2xl font-medium tracking-tight">
+      <h2 className="relative text-2xl md:text-3xl font-medium tracking-tight">
         {renderText()}
       </h2>
 
