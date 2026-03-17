@@ -1,14 +1,15 @@
 import './App.css'
-// import {asteroiDevLogo} from './utils/images.ts';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import AppRouter from "./router/router";
 
 function App() {
 
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <HashRouter>
       <AppRouter />
-    </BrowserRouter>
+    </HashRouter>
+    // </BrowserRouter>
   )
 }
 
