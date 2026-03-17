@@ -18,7 +18,7 @@ export default function Hero() {
             Hello, welcome to
           </p>
 
-          <h1 className="text-3xl md:text-6xl font-semibold text-center">
+          <h1 className="text-3xl md:text-6xl font-light text-center">
             The smarter way to <p className='font-bold'>level up</p>
           </h1>
         </div>
