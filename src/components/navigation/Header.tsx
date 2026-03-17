@@ -24,7 +24,7 @@ export default function Header() {
           </div>
 
           <nav className="hidden md:flex gap-8 text-asdev-white">
-            <Link to="/">Home</Link>
+            <Link className="text-asdev-gray-200 hover:text-asdev-white pb-1 border-b-2 border-transparent hover:border-asdev-aqua transition-all duration-500" to="/">Home</Link>
             {/* <Link to="/services">Services</Link>
             <Link to="/members">Members</Link>
             <Link to="/contact">Contact</Link> */}
@@ -50,7 +50,7 @@ export default function Header() {
             `}
           >
             <nav className="flex flex-col gap-2 text-asdev-white">
-              <Link to="/">Home</Link>
+              <Link className="" to="/">Home</Link>
               {/* <Link to="/services">Services</Link>
               <Link to="/members">Members</Link>
               <Link to="/contact">Contact</Link> */}
