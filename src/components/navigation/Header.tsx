@@ -27,8 +27,8 @@ export default function Header() {
           <nav className="hidden md:flex gap-8 text-asdev-white">
             <NavItem to="/" exact>Home</NavItem>
             <NavItem to="/services" exact>Services</NavItem>
-            {/* <NavItem to="/members" exact>Members</NavItem>
-            <NavItem to="/contact" exact>Contact</NavItem> */}
+            <NavItem to="/members" exact>Members</NavItem>
+            {/* <NavItem to="/contact" exact>Contact</NavItem> */}
           </nav>
 
           <button
@@ -53,8 +53,8 @@ export default function Header() {
             <nav className="flex flex-col gap-2 text-asdev-white">
               <NavLink className="" to="/" onClick={() => setMenuOpen(!menuOpen)}>Home</NavLink>
               <NavLink className="" to="/services" onClick={() => setMenuOpen(!menuOpen)}>Services</NavLink>
-              {/* <NavLink className="" to="/members" onClick={() => setMenuOpen(!menuOpen)}>Members</NavLink>
-              <NavLink className="" to="/contact" onClick={() => setMenuOpen(!menuOpen)}>Contact</NavLink> */}
+              <NavLink className="" to="/members" onClick={() => setMenuOpen(!menuOpen)}>Members</NavLink>
+              {/* <NavLink className="" to="/contact" onClick={() => setMenuOpen(!menuOpen)}>Contact</NavLink> */}
             </nav>
           </div>
 
