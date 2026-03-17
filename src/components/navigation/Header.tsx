@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { CircleChevronDown, CircleX } from "lucide-react";
 import Container from "../ui/Container";
 import { asteroiDevIsotype } from '../../utils/images';
 import { useRef, useState } from "react";
 import useClickOutside from "../../hooks/useClickOutside";
+import NavItem from "./NavItem";
 
 
 export default function Header() {
@@ -24,10 +25,10 @@ export default function Header() {
           </div>
 
           <nav className="hidden md:flex gap-8 text-asdev-white">
-            <Link className="text-asdev-gray-200 hover:text-asdev-white pb-1 border-b-2 border-transparent hover:border-asdev-aqua transition-all duration-500" to="/">Home</Link>
-            {/* <Link to="/services">Services</Link>
-            <Link to="/members">Members</Link>
-            <Link to="/contact">Contact</Link> */}
+            <NavItem to="/" exact>Home</NavItem>
+            <NavItem to="/services" exact>Services</NavItem>
+            {/* <NavItem to="/members" exact>Members</NavItem>
+            <NavItem to="/contact" exact>Contact</NavItem> */}
           </nav>
 
           <button
@@ -50,10 +51,10 @@ export default function Header() {
             `}
           >
             <nav className="flex flex-col gap-2 text-asdev-white">
-              <Link className="" to="/">Home</Link>
-              {/* <Link to="/services">Services</Link>
-              <Link to="/members">Members</Link>
-              <Link to="/contact">Contact</Link> */}
+              <NavLink className="" to="/" onClick={() => setMenuOpen(!menuOpen)}>Home</NavLink>
+              <NavLink className="" to="/services" onClick={() => setMenuOpen(!menuOpen)}>Services</NavLink>
+              {/* <NavLink className="" to="/members" onClick={() => setMenuOpen(!menuOpen)}>Members</NavLink>
+              <NavLink className="" to="/contact" onClick={() => setMenuOpen(!menuOpen)}>Contact</NavLink> */}
             </nav>
           </div>
 
