@@ -9,7 +9,7 @@ import HighlightText from "../../components/ui/HighlightText";
 const members = [
   { name: "Eduardo", image: eduYM, title: "Co-founder" },
   { name: "Abel", image: abelHZ, title: "Co-founder" },
-  { name: "Julio César", image: newMember, title: "Full Stack Dev" },
+  { name: "Julio César", image: newMember, title: "Full Stack Developer" },
   { name: "New Joiner", image: newMember, title: "Could be you!" },
 ];
 
