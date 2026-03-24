@@ -2,14 +2,14 @@ import Container from "../../components/ui/Container";
 import PageTitles from "../../components/ui/PageTitles";
 import { } from "lucide-react";
 import { alienTwins } from '../../utils/images';
-import { abelHZ, eduYM, newMember,  } from "../../utils/members";
+import { abelHZ, eduYM, julioYM, newMember,  } from "../../utils/members";
 import MembersCarousel from "../../components/ui/MembersCarousel";
 import HighlightText from "../../components/ui/HighlightText";
 
 const members = [
   { name: "Eduardo", image: eduYM, title: "Co-founder" },
   { name: "Abel", image: abelHZ, title: "Co-founder" },
-  { name: "Julio César", image: newMember, title: "Full Stack Developer" },
+  { name: "Julio César", image: julioYM, title: "Full Stack Developer" },
   { name: "New Joiner", image: newMember, title: "Could be you!" },
 ];
 
